@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<mavlink>
+    <include>common.xml</include>
+	<!-- enouav Mavlink Message Definition File -->
+	<!-- Used for the enouav multicopter autopilot (), which implements extensions to the Pixhawk (www.pixhawk.org) autopilot -->	
+	<enums>
+	</enums>
+	<messages>
+		<message id="180" name="PWM_INPUT">
+			<description>This message encodes pwm_input values.</description>
+			<field type="uint64_t" name="error_count">(uint64_t, 0...)</field>
+			<field type="uint32_t" name="time_boot_ms">Timestamp (milliseconds since system boot)</field>
+			<field type="uint32_t" name="pulse_width">(uint32_t, 0...)</field>
+			<field type="uint32_t" name="period">(uint32_t, 0...)</field>
+		</message>
+	</messages>
+</mavlink>
